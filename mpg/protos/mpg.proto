@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package mpg;
+
+// Simple grpc Tic-Tac-Toe
+service TicTacToe {
+    // Sends player's move
+    rpc PlayTurn (PlayerMove) returns (CurrentBoard) {}
+}
+
+// The request message containing current player's move
+message PlayerMove {
+    string pos = 1;
+}
+
+// The response message containing previous player's move
+message CurrentBoard {
+    string pos = 1;
+}
