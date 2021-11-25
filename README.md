@@ -1,3 +1,3 @@
 # Tic Tac Toe made from gRPC and NodeJS
 
-run 'npm install -g grpc @grpc/proto-loader'
+run 'npm install --save grpc @grpc/proto-loader'
